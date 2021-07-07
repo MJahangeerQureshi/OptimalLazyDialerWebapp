@@ -1,7 +1,7 @@
 import streamlit as st
 from lazy import compute_laziest_path_greedy, compute_laziest_best_global_path
 
-st.title('Relayr - Data Scientist - Coding task')
+st.title('Lazy Dialing Coding Problem')
 
 st.header('Problem Statement')
 st.markdown('''
