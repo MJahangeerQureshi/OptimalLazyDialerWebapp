@@ -53,7 +53,7 @@ col2.markdown('''
         to generate all possible actions and selects the most optimal action. 
         It is a much more expensive approach both in terms of computation and space however it is confirmed to yield the best 
         possible solution. 
-        This was observed for the cases of phone numbers like 417 or 583 where the "Global Path Approach" beats out the "Local Greedy Approach".
+        This was observed for the cases of phone numbers like "417", "583" or "1231232113" where the "Global Path Approach" beats out the "Local Greedy Approach".
 
         #### Time Complexity : O(n.2**n)
         #### Space Complexity : O(n+2**n+k)
@@ -62,7 +62,7 @@ col2.markdown('''
 
 numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '*', '0', '#']
 
-PhoneNumber = st.text_input('Enter Phone Number')
+PhoneNumber = st.text_input('Enter Phone Number', '1231232113')
 
 if st.button('Compute Solution'):
     if all(i in numbers for i in PhoneNumber):
